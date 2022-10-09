@@ -22,7 +22,7 @@ import { AuthGuard } from 'src/guards/auth-guard';
 import User from './user.entity';
 
 @Controller('auth')
-@Serialize(UserDto)
+// @Serialize(UserDto)
 export class UsersController {
     constructor(
         private usersService: UsersService,
@@ -30,7 +30,7 @@ export class UsersController {
     ) {}
 
     @Get('/currentUser')
-    @UseGuards(AuthGuard)
+    // @UseGuards(AuthGuard)
     currentUser(@CurrentUser() user: User) {
         return user;
     }
