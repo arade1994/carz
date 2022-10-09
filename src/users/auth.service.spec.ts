@@ -3,6 +3,7 @@ import {
     BadRequestException,
     NotFoundException,
 } from '@nestjs/common/exceptions';
+
 import { AuthService } from './auth.service';
 import { UsersService } from './users.service';
 import User from './user.entity';
