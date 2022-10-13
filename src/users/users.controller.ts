@@ -18,7 +18,7 @@ import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { UserDto } from './dtos/user.dto';
 import { UsersService } from './users.service';
-import { AuthGuard } from 'src/guards/auth-guard';
+import { AuthGuard } from 'src/guards/auth.guard';
 import User from './user.entity';
 
 @Controller('auth')
